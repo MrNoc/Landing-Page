@@ -1,0 +1,499 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1b5a34;
+    color: #6d6c6c;
+    
+}
+
+/* Primeira camada - Menu de navegação */
+nav {    
+    background-color: #44b77a;
+    padding:35px;
+    display:flex;
+    justify-content: space-around;
+    font-size: 17px;
+}
+#navbar {
+  margin-top: 20px;
+  border-radius: 20px;
+  opacity: 0.7;
+  border: 2px solid;
+  position: fixed;
+  width: 300px;
+  font-size: 10px;
+  transition: top 9s;
+  display:block;
+  -webkit-transition: 0.45s all ease-in-out;
+  -moz-transition: 0.45s all ease-in-out;
+  -o-transition: 0.45s all ease-in-out;
+  transition: 0.45s all ease-in-out;
+}
+#navbar:hover {
+  opacity: 1.5;
+  border: 2px solid;
+  position: fixed;
+  width: 300px;
+  font-size: 10px;
+  transition: top 5.0s;
+  display:block;
+  -webkit-transition: 0.45s all ease-in-out;
+  -moz-transition: 0.45s all ease-in-out;
+  -o-transition: 0.45s all ease-in-out;
+  transition: 0.45s all ease-in-out;
+}
+
+@keyframes mymove {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+  }
+#devRadar {
+    max-width: 150px;
+    text-decoration: none;
+    list-style: none;
+    cursor: pointer;
+    transition: transform 1s;
+    transform: translateX(5px) scale(0.8);
+}
+
+#devRadar:hover,
+#devRadar:focus {
+    transform: translateX(15px) scale(1.1);
+}
+#menu ul{
+  margin-left: 55px;
+  
+}
+nav a{
+    text-decoration: none;
+    color: #f6fbf8;
+}
+.menu ul {
+    list-style: none;
+    cursor: pointer;
+    display:flex;
+    margin-top: 12px;
+    grid-gap: 44px;
+    -webkit-transition: 0.45s all ease-in-out;
+    -moz-transition: 0.45s all ease-in-out;
+    -o-transition: 0.45s all ease-in-out;
+    transition: 0.45s all ease-in-out;
+}
+
+nav li:hover{
+    opacity: 0.7;
+    -webkit-transition: 0.45s all ease-in-out;
+    -moz-transition: 0.45s all ease-in-out;
+    -o-transition: 0.45s all ease-in-out;
+    transition: 0.45s all ease-in-out;
+}
+
+/* Redes Sociais */
+.social-media ul{
+    cursor: pointer;
+    display:flex;
+    -webkit-transition: 0.45s all ease-in-out;
+    -moz-transition: 0.45s all ease-in-out;
+    -o-transition: 0.45s all ease-in-out;
+    transition: 0.45s all ease-in-out;
+}
+.social-media img{
+    width: 50px;
+    -webkit-transition: 0.40s all ease-in-out;
+    -moz-transition: 0.40s all ease-in-out;
+    -o-transition: 0.40s all ease-in-out;
+    transition: 0.40s all ease-in-out;
+}
+
+/* Fundo da segundo camada */
+.wallpaper-header{
+    margin-bottom: -5px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+/* Conteudo com titulo e descrição no header. */
+.header-content {
+    position:absolute;
+    top: 28%;
+    right: 43%;
+    bottom: 50%;
+    transition: translate(-50%,-50%);
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0,5);
+    width:515px;
+}
+.header-content p{
+    margin-top: 25px;
+}
+
+.header-content img{
+    width: 17px;
+    height: 18px;
+    margin-right: 20px;
+    
+}
+
+/*Box de separação dos apps por SO.*/
+.mobile-devices  {
+    margin-top: 30px;
+    display:flex;
+    grid-gap: 20px;
+    font-weight: bold;
+}
+.ios-content {
+    padding: 15px 40px 15px 40px;
+    margin-top: 20px;
+    border: 2px solid;
+    -webkit-transition: 0.45s all ease-in-out;
+    -moz-transition: 0.45s all ease-in-out;
+    -o-transition: 0.45s all ease-in-out;
+    transition: 0.45s all ease-in-out;
+}
+.ios-content:hover {
+    cursor: pointer;
+    background-color: #44b77a;
+    -webkit-transition: 0.45s all ease-in-out;
+    -moz-transition: 0.45s all ease-in-out;
+    -o-transition: 0.45s all ease-in-out;
+    transition: 0.45s all ease-in-out;
+}
+.android-content {
+    padding: 15px 40px 15px 40px;
+    margin-top: 20px;
+    border: 2px solid;
+    -webkit-transition: 0.45s all ease-in-out;
+    -moz-transition: 0.45s all ease-in-out;
+    -o-transition: 0.45s all ease-in-out;
+    transition: 0.45s all ease-in-out;
+}
+.android-content:hover {
+    cursor: pointer;
+    background-color: #44b77a;
+    -webkit-transition: 0.45s all ease-in-out;
+    -moz-transition: 0.45s all ease-in-out;
+    -o-transition: 0.45s all ease-in-out;
+    transition: 0.45s all ease-in-out;
+}
+
+/* Páginas contidas no main. */
+
+.pages ul{
+    display:flex;
+    justify-content: space-evenly;
+    background-color: #f3f3f3;
+}
+.pages img{
+    width:100%;
+    margin: 30px 0px 5px 0px;
+    cursor: pointer;
+}
+.pages img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* Dispositivo Móvel */
+.moments #cellphone{
+    height: 510px;
+    margin-top: 90px;
+    /*box-shadow: ;*/
+  
+}
+
+/* Título, descrição e listagem de momentos. */
+.moments {
+    display:flex;
+    justify-content: space-around;
+    height: 805px;
+    color: #6d6c6c;
+    background-color: #faf9f9;
+}
+
+/* Descrição dos momentos. */
+.moments .moments-description{
+    width:459px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+/* Parágrafo da descrição */
+.moments-description p {
+    width:445px;
+    margin-top:20px;
+}
+
+/* Lista de momentos. */
+.moments-list{
+    width:445px;
+    margin-top:40px;
+}
+.moments-list img {
+    margin-top: 5px;
+    margin-right: 20px;
+    display:flex;
+    width:37px;
+    height:31px;
+}
+
+.moments ul li {
+    display:flex;
+}
+
+.moments-list p{
+    display:flex;
+    margin: 0 auto;
+    font-weight: 500;
+    line-height: 45px;
+    border-spacing:  0 auto;
+}
+
+/* Video de exemplo */
+.video-example {
+    cursor: pointer;
+    display:flex;
+    margin-top: 50px;
+    
+}
+.video-example h1{
+    display:flex;
+    width: 640px;
+    height: 60px;
+    font-size: 13pt;
+    justify-content: center;
+    text-align: center;
+    border: 2px solid;
+    box-sizing: inherit;
+    padding-top: 15px;
+}
+.video-example h1:hover {
+    cursor: pointer;
+    background-color: #44b77a;
+    -webkit-transition: 0.45s all ease-in-out;
+    -moz-transition: 0.45s all ease-in-out;
+    -o-transition: 0.45s all ease-in-out;
+    transition: 0.45s all ease-in-out;
+    
+}
+
+.moments .video-example img{
+    margin-top: 4px;
+    width: 15px;
+    height: 15px;
+    margin-right: 20px;
+}
+.video-example p {
+    width:400px;
+    padding: 0;
+    border-spacing: 0 auto;
+    margin-left: 40px;
+    justify-content: center;
+    text-align: left;
+}
+.video-example p:hover {
+    cursor: pointer;
+    opacity: 0.7;
+    -webkit-transition: 0.45s all ease-in-out;
+    -moz-transition: 0.45s all ease-in-out;
+    -o-transition: 0.45s all ease-in-out;
+    transition: 0.45s all ease-in-out;
+}
+
+/* Primeira linha com 3 colunas. */
+.row-1 {
+    
+    text-align: center;
+    display:flex;
+    justify-content:space-around;
+    width: 100%;
+    height: 325px;
+    border-spacing:  0 auto;
+    margin-bottom: -1px;
+    color: #ffffff;
+    background-color: #41c07d;
+    padding-top: 80px;
+}
+.content {
+    flex-direction: column;
+    width: 330px;
+    height: 335px;
+}
+.content img {
+    width: 58px;
+    height: 58px;
+}
+.content h1{
+    font-weight:inherit;
+    width: 331px;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.content p{
+    width: 313px;
+    margin-top: 35px;
+    font-weight: 200;
+}
+
+
+
+
+/* Segunda linha com 3 colunas. */
+.row-2 {
+    text-align: center;
+    display:flex;
+    justify-content:space-around;
+    width: 100%;
+    height: 405px;
+    color: #ffffff;
+    background-color: #41c07d;
+    
+}
+.content {
+    flex-direction: column;
+    width: 330px;
+    height: 335px;
+}
+.content img {
+    width: 53px;
+    height: 50px;
+}
+.content h1{
+    font-weight:600;
+    width: 331px;
+    margin-top: 40px
+
+}
+.content p{
+    width: 313px;
+    margin-top: 35px;
+    font-weight: 200;
+}
+
+/* John */
+.john-about{
+    flex-direction: column;
+    background-color: #faf9f9;
+    width:100%;
+    height:369px;
+    padding: 100px 0px 300px 0px;
+}
+.john-description p{
+    line-height: 35px;
+    justify-content:center;
+    text-align:center;
+    margin-left: 132px;
+    width: 720px;
+}
+.john-dev h4{
+    margin-top: 32px;
+    justify-content:center;
+    text-align:center;
+    align-items: center;
+}
+section .john-dev p{
+    justify-content:center;
+    text-align:center;
+    align-items: center;
+}
+
+/* Entrar na lista. */
+.join-list {
+    height: 320px;
+    padding-top: 100px;
+    text-align:center;
+    justify-content:center;
+    background-color: #41c07d;
+    color: #ffffff;
+}
+.join-list h1{
+    font-weight: inherit;
+    font-size: 20px;
+}
+
+input {
+    margin-top: 55px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    
+    width: 371px;
+    height: 50px;
+}
+::placeholder{
+    color:#41c07d;
+    font-size: 11pt;
+    padding-left: 15px;
+}
+
+#mail-icon {
+    position:relative;
+    right: 45px;
+    bottom: -8px;
+    width:23px;
+}
+
+/* Rodapé. */
+footer {
+    padding-top: 100px;
+    width: 100%;
+    height:287px;
+    background-color: #faf9f9;
+}
+
+.devices {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    grid-gap: 64px;
+}
+.devices img {
+    width: 40px;
+}
+Pixelhint {
+    display:flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 50px;
+}
+@media screen and (max-width: 600px) {
+    body {
+      background-color: red;
+      margin-right: -234px;
+    }
+    section .john-description p{
+        line-height: 35px;
+        margin-top: 32px;
+        justify-content:center;
+        text-align:center;
+        width: 720px;   
+    }
+    section.row-1{
+        font-size: 2px;
+        background-color:red;
+    }
+  }
+@media screen and (max-width: 400px) {
+    
+    .pages {
+border-spacing:  0;
+    }
+    section .john-description p{
+        line-height: 35px;
+        margin-top: 32px;
+        justify-content:center;
+        text-align:center;
+        width: 720px;
+    }
+    
+  }
+  

@@ -1,0 +1,220 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<head>
+	<link href="favicon.ico">
+	<link rel="stylesheet" href="style.css">
+	<title>Landing Page</title>
+</head>
+
+<script>
+
+	// Simples movimento com efeito de entrada e saida em JS com a utilização do scroll do mouse.
+	var prevScrollpos = window.pageYOffset;
+	window.onscroll = function () {
+		var currentScrollPos = window.pageYOffset;
+		if (prevScrollpos > currentScrollPos) {
+			document.getElementById("navbar").style.bottom = "100%";
+		} else {
+			document.getElementById("navbar").style.bottom = "0px";
+			document.getElementById("navbar").style.left = "50px";
+		}
+		prevScrollpos = currentScrollPos;
+	}
+</script>
+<body>
+	<nav>
+		<!-- Menu -->
+		<div class="menu">
+			<ul>
+				<li><a href="">About</a></li>
+				<li><a href="">Features</a></li>
+				<li><a href="">Testimonials</a></li>
+			</ul>
+		</div>
+		<!-- Redes sociais -->
+		<div class="social-media">
+			<ul>
+				<li><img src="./images/facebook-logo.png" alt="facebook"></li>
+				<li><img src="./images/twitter-logo.png" alt="twitter"></li>
+				<li><img src="./images/google-logo.png" alt="google"></li>
+			</ul>
+		</div>
+	</nav>
+
+
+
+
+	<nav id="navbar">
+		<!-- Menu -->
+		<div class="menu">
+			<ul>
+				<li><a href="">About</a></li>
+				<li><a href="">Features</a></li>
+				<li><a href="">Testimonials</a></li>
+			</ul>
+		</div>
+		<!-- Redes sociais -->
+		<div class="social-media">
+			<ul>
+				<li><img src="./images/facebook-logo.png" alt="facebook"></li>
+				<li><img src="./images/twitter-logo.png" alt="twitter"></li>
+				<li><img src="./images/google-logo.png" alt="google"></li>
+			</ul>
+		</div>
+
+		<div id="navbar-side" class="navbar-side">
+			
+				<a href="#top"><h1>Voltar ao topo ↑</h1></a>
+			
+		</div>
+	</nav>
+	
+
+
+
+
+	<header>
+
+		<section class="container">
+			<!-- Imagem de fundo da segunda camada. -->
+			<img src="./images/header-wallpaper.jpg" width="100%">
+			
+				<div class="wallpaper-header">
+				<!-- Conteudo com titulo e descrição no header. -->
+				<div class="header-content">
+					<h1>TAKE PHOTOS LIKE A PRO.</h1>
+					<p>With only your iphone and capture app you can take stunnig image like a professional Photographer.</p>
+					<!-- Box de separação dos apps por SO. -->
+					<div class="mobile-devices">
+						<div class="ios-content"><img src="./images/ios.png">IPHONE APP</div>
+						<div class="android-content"><img src="./images/android.png">ANDROID APP</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+	</header>
+
+	<main>
+		<!-- Pages -->
+		<div class="pages">
+			<ul>
+				<li><img src="./images/google-page.png" alt="google"></li>
+				<li><img src="./images/facebook-page.png" alt="facebook"></li>
+				<li><img src="./images/yahoo-page.png" alt="yahoo"></li>
+				<li><img src="./images/paypal-page.png" alt="paypal"></li>
+			</ul>
+		</div>
+
+		<!-- Moments -->
+		<div class="moments">
+		
+		<div class="cellphone-border">
+		<img id="cellphone" src="./images/cellphone.png" alt="">
+		</div>
+		
+		<!-- Titule e descrição de momentos. -->
+		<div class="moments-description">
+			<h1>CAPTURE UNFORGETTABLE MOMENTS.</h1>
+			<p>Seuismod ligula ipsum vulputate tellus quisque dictum tortor at purus faucibus tincidunt, pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. </p>
+		
+		<!-- Lista de momentos -->
+		<div class="moments-list">
+			<ul>
+				<li><img src="./images/picture-cam.png" alt=""><p>Euismod ligula ipsum vulputate tellus.</p></li>
+				<li><img src="./images/video-cam.png" alt=""><p>Morbi non efficitur nibh sit amet est eros.</p></li>
+				<li><img src="./images/eye.png" alt=""><p>Fusce faucibus ante liberonec luctus egestas.</p></li>
+				<li><img src="./images/pictures.png" alt=""><p>Quisque pretium malesuada ornare.</p></li>
+				<li><img src="./images/location.png" alt=""><p>Cras interdum vestibulum dolor.</p></li>
+			</ul>
+		</div>
+
+		<!-- Botao pra assistir video e link para baixar o app. -->
+		<div class="video-example">
+			<h1><img src="./images/play.png" alt=""> WATCH THE VIDEO</h1>
+			<p>get app</p>
+		</div>
+	</div>
+	</main>
+	
+	<section>
+		<!--Primeira linha -->
+		<div class="row-1">
+			<div class="content">
+				<img src="./images/peoples.png" alt="">
+				<h1>MALESUADA FAMES TURPIS.</h1>
+				<p>vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
+			</div>
+			<div class="content">
+				<img src="./images/pictures-two.png" alt="">
+				<h1>MALESUADA FAMES TURPIS.</h1>
+				<p>vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
+			</div>
+			<div class="content">
+				<img src="./images/object.png" alt="">
+				<h1>MALESUADA FAMES TURPIS.</h1>
+				<p>vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
+			</div>
+		</div>
+
+		<!-- Segunda Linha -->
+		<div class="row-2">
+			<div class="content">
+				<img src="./images/dialogue.png" alt="">
+				<h1>MALESUADA FAMES TURPIS.</h1>
+				<p>vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
+			</div>
+			<div class="content">
+				<img src="./images/gear.png" alt="">
+				<h1>MALESUADA FAMES TURPIS.</h1>
+				<p>vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
+			</div>
+			<div class="content">
+				<img src="./images/printer.png" alt="">
+				<h1>MALESUADA FAMES TURPIS.</h1>
+				<p>vel ultrices mauris libero id diam. Vivamus tellus sagittis facilisis nisi quis mollis risus quisque ultrices elit.</p>
+			</div>
+		</div>
+	</section>
+	
+	<!--Sobre John -->
+	<section>
+		<div class="john-about">
+
+			<div class="john-description">
+				<p>Integer pharetra tellus varius, dictum erat vel, maximus tellus. Sed vitae auctor ipsum. Aliquam luctus erat nec pulvinar vehicula donec congue tortor eget sem condimentum, ut tempor massa porttitor. Praesent tincidunt mi orci  in sollicitudin mi dapibus dapibus pellentesque habitant morbi tristique senectus et malesuada fames turpis egestas.</p>
+			</div>
+
+			<div class="john-dev">
+				<h4>JOHN DOE</h4>
+				<p>app developer</p>
+			</div>
+			
+		</div>
+	</section>
+
+	<!-- Entrar na lista. -->
+	<section>
+		<div class="join-list">
+			<h1>Join Our List and stay updated!</h1>
+			<input type="email" placeholder="Enter your email"><img id="mail-icon" src="./images/mail.png" alt="">
+		</div>
+	</section>
+
+	<!-- Rodapé -->
+	<footer>
+		<div class="devices">
+			<img src="./images/android-logo.png" alt="">
+			<img src="./images/ios-logo.png" alt="">
+			<img src="./images/windows-logo.png" alt="">
+		</div>
+
+		<Pixelhint class="com">© 2015 All Rights Reserved</Pixelhint>
+	</footer>
+	
+</body>
+</html>
